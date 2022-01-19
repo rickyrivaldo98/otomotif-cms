@@ -1,0 +1,15 @@
+.container{
+    
+    &-collapse{
+        @apply relative min-w-full flex flex-col h-screen justify-between
+    }
+    &-noCollapse{
+        @apply relative md:pl-64 min-w-full flex flex-col h-screen justify-between
+    }
+    
+}
+
+.container-content{
+    @apply px-4 md:px-10 mx-auto w-full mb-auto
+}
+
