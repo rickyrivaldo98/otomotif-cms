@@ -7,6 +7,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Sidebar from './components/layout/Sidebar';
 import { useState } from "react";
+import EditDataPage from './pages/EditDataPage';
 
 function App() {
   const [collapseShow, setCollapseShow] = useState(false);
@@ -19,6 +20,8 @@ function App() {
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/DataPage' element={<DataPage />} />
+            <Route path='/EditDataPage/:id' element={<EditDataPage />} />
+
           </Routes>
         </div>
         <Footer setCollapse={setCollapseShow} collapse={collapseShow} />

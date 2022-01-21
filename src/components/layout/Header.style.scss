@@ -1,0 +1,19 @@
+.container-header{
+    @apply top-0 left-0 w-full z-10 bg-transparent md:bg-primary md:flex-row md:flex-nowrap md:justify-start flex items-center p-4
+}
+
+.header-content{
+    @apply w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4
+}
+
+.collapse-button{
+    @apply text-white text-3xl uppercase hidden lg:inline-block font-semibold
+}
+
+.user-button{
+    @apply flex-col md:flex-row list-none items-center hidden md:flex text-white
+}
+
+.sidebar-mobile-title{
+    @apply md:block text-center md:pb-2 text-gray-700 mr-0 inline-block text-sm  font-bold p-4 px-0
+}

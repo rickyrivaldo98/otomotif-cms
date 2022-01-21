@@ -1,0 +1,47 @@
+.sidebar-container{
+    @apply md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:overflow-hidden shadow-xl bg-primary md:bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6
+}
+
+.sidebar-content{
+    @apply md:flex-col md:items-stretch md:min-h-full px-0 flex flex-wrap items-center justify-between w-full mx-auto z-10
+}
+
+.sidebar-mobile-button{
+    @apply cursor-pointer text-white md:text-black md:opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent
+}
+
+.sidebar-title{
+    @apply md:block text-center md:pb-2 text-white md:text-gray-700 mr-0 inline-block  text-xl  font-bold p-4 px-0
+}
+
+.sidebar-mobile-container{
+    @apply md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded 
+}
+
+.sidebar-mobile-content{
+    @apply md:min-w-full md:hidden block pb-4 mb-4
+}
+
+.sidebar-mobile-close{
+    @apply cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent
+}
+
+.menu-title{
+    @apply md:min-w-full text-gray-600 text-lg font-bold block pt-1 pb-4 no-underline md:mt-10
+}
+
+.menu-container{
+    @apply md:flex-col md:min-w-full flex flex-col list-none
+}
+
+.options-menu{
+    @apply text-base pl-3 py-3 font-bold block 
+}
+
+.selected{
+    @apply text-blue-700 hover:text-blue-500 bg-gray-100 border-l-8 border-blue-500
+}
+
+.unselected{
+    @apply text-gray-700 hover:text-gray-500 
+}

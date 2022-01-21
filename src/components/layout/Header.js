@@ -1,22 +1,20 @@
 import UserDropdown from "./UserDropdown";
-
+import "./Header.style.scss"
 const Header = (props) => {
     return (
         <>
-            <nav className=" top-0 left-0 w-full z-10 bg-transparent md:bg-primary md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
-                <div className="w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
+            <nav className="container-header">
+                <div className="header-content">
                     <a
-                        className="text-white text-3xl uppercase hidden lg:inline-block font-semibold"
-                        href="#pablo"
+                        className="collapse-button"
+                        href="#collapse"
                         onClick={() => props.setCollapse(!props.collapse)}
                     >
-                        <div className="fas fa-bars" >
-
-                        </div>
+                        <div className="fas fa-bars"></div>
                     </a>
-                    <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
-                        <div className="pr-5 far fa-envelope text-white text-2xl"></div>
-                        <div className="pr-5 far fa-bell text-white text-2xl"></div>
+                    <ul className="user-button">
+                        <div className="pr-5 far fa-envelope text-2xl"></div>
+                        <div className="pr-5 far fa-bell text-2xl"></div>
 
                         <UserDropdown />
                     </ul>
