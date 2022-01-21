@@ -99,21 +99,19 @@ const EditDataPage = () => {
                     </>
                     :
                     <>
-                        <div className="flex flex-wrap mt-4">
-                            <div className="w-10/12 mb-12 px-4">
-                                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
-                                    <div className="rounded-t bg-white mb-0 px-6 py-6">
-                                        <div className="text-center flex justify-start">
-                                            <button
-                                                className="bg-blue-500 text-white active:bg-lightBlue-600 font-bold  text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
-                                                type="button"
-                                                onClick={() => window.history.back()}
-                                            >
-                                                Back
-                                            </button>
-                                        </div>
+                        <div className="content-card">
+                            <div className="container-card">
+                                <div className="shadow-card">
+                                    <div className="button-back-container">
+                                        <button
+                                            className="button-back"
+                                            type="button"
+                                            onClick={() => window.history.back()}
+                                        >
+                                            Back
+                                        </button>
                                     </div>
-                                    <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
+                                    <div className="container-form">
                                         <form onSubmit={(e) => editHandle(e)}>
                                             <div className="flex flex-col flex-wrap">
                                                 {loading && <div>loading...</div>}
@@ -135,7 +133,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -153,7 +151,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -171,7 +169,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -189,7 +187,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -207,7 +205,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -225,7 +223,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                             <div className="relative w-full mb-3">
@@ -243,7 +241,7 @@ const EditDataPage = () => {
                                                                     }}
                                                                     type="text"
                                                                     // placeholder={data.category_nama}
-                                                                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    className="input-text"
                                                                 />
                                                             </div>
                                                         </div>

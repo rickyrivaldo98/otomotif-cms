@@ -5,3 +5,31 @@
 .content-edit{
     @apply pt-20 mx-2 md:mx-28 
 }
+
+.content-card{
+    @apply flex flex-wrap mt-4
+}
+
+.container-card{
+    @apply w-10/12 mb-12 px-4
+}
+
+.shadow-card{
+    @apply relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg border-0
+}
+
+.button-back-container{
+    @apply rounded bg-white mb-0 px-6 py-6 text-center flex justify-start
+}
+
+.button-back{
+    @apply bg-blue-500 text-white active:bg-blue-300 font-bold  text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150
+}
+
+.container-form{
+    @apply flex-auto px-4 lg:px-10 py-10 pt-0
+}
+
+.input-text{
+    @apply border-0 px-3 py-3  bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150
+}
